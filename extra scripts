@@ -1,0 +1,53 @@
+const express = require('express');
+const bodyParser = require('body-parser');
+const cors = require('cors');
+const fs = require('fs');
+
+const app = express();
+const port = 3000; // Or any other port you prefer
+
+// Middleware
+app.use(cors()); // Enable CORS for all routes
+app.use(bodyParser.json()); // Parse JSON request bodies
+
+const dataFilePath = 'status_data.json';
+
+// Helper function to read data from the JSON file
+function readData() {
+    try {
+        const data = fs.readFileSync(dataFilePath, 'utf8');
+        return JSON.parse(data);
+    } catch (err) {
+        console.error("Error reading data from file:", err);
+        return []; // Return an empty array if there's an error
+    }
+}
+
+// Helper function to write data to the JSON file
+function writeData(data) {
+    try {
+        fs.writeFileSync(dataFilePath, JSON.stringify(data, null, 2)); // Use 2 spaces for indentation
+        console.log("Data written to file successfully.");
+    } catch (err) {
+        console.error("Error writing data to file:", err);
+    }
+}
+
+// API endpoint to get the status data
+app.get('/status', (req, res) => {
+    const data = readData();
+    res.json(data);
+});
+
+// API endpoint to update the status data (PUT request)
+app.put('/status', (req, res) => {
+    const newData = req.body; // The new data sent from the frontend
+
+    writeData(newData); // Write the new data to the file
+    res.status(200).send('Status data updated successfully.');
+});
+
+// Start the server
+app.listen(port, () => {
+    console.log(`Server listening at http://localhost:${port}`);
+});
