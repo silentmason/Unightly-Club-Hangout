@@ -1,0 +1,22 @@
+[
+  {
+    "service": "Website",
+    "status": "operational",
+    "description": "All systems are currently running smoothly."
+  },
+  {
+    "service": "API",
+    "status": "operational",
+    "description": "All APIs are working fine"
+  },
+  {
+    "service": "Database",
+    "status": "major_issues",
+    "description": "All Databases has been wiped from the website requiring me to find alternatives"
+  },
+  {
+    "service": "Authentication Service",
+    "status": "operational",
+    "description": "Users are able to log in and authenticate without issues."
+  }
+]
