@@ -1,17 +1,17 @@
 [
   {
     "service": "Website",
-    "status": "operational",
-    "description": "All systems are currently running smoothly, Horray!"
+    "status": "major_issues",
+    "description": "website got so broken I had to disable the loading screen and lots of other features"
   },
   {
     "service": "API",
-    "status": "operational",
-    "description": "All APIs are working fine"
+    "status": "minor_issues",
+    "description": "API issues are preventing posts from being posted or seen"
   },
   {
     "service": "Database",
-    "status": "minor_issues",
+    "status": "major_issues",
     "description": "posting for staff is currently not working"
   },
   {
