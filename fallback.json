@@ -1,8 +1,10 @@
-(Only website staff can see this)
-To edit the status:
+[
+  {
+"(Only website staff can see this)"
+"service": "to edit the status follow the steps below",
 Go to https://github.com/silentmason/Unightly-Club-Hangout/blob/main/status_data.json
 Edit it to the correct status in the correct status box and type everything correctly
 operational
 minor_issues
 major_issues
-Add the issue after then click commmit to update the status for the website
+Add the issue after then click commmit to update the status for the website"
