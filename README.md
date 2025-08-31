@@ -1,2 +1,2 @@
 # Unightly-Club-Hangout
-Lists for unightly Club Hangout
+Anything that belongs to Unightly Club Hangout is here.
