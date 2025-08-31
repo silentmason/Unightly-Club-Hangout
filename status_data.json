@@ -11,8 +11,8 @@
   },
   {
     "service": "Database",
-    "status": "major_issues",
-    "description": "All Databases has been wiped from the website requiring me to find alternatives"
+    "status": "minor_issues",
+    "description": "posting for staff is currently not working"
   },
   {
     "service": "Authentication Service",
