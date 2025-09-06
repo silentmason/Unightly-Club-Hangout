@@ -2,17 +2,17 @@
   {
     "service": "Website",
     "status": "major_issues",
-    "description": "website got so broken I had to disable the loading screen and lots of other features"
+    "description": "Feed doesn't load, forever loading"
   },
   {
     "service": "API",
-    "status": "minor_issues",
-    "description": "API issues are preventing posts from being posted or seen"
+    "status": "operational",
+    "description": "API seems to be working just fine"
   },
   {
     "service": "Database",
-    "status": "major_issues",
-    "description": "posting for staff is currently not working"
+    "status": "operational",
+    "description": "Everything is working as expected"
   },
   {
     "service": "Authentication Service",
